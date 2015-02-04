@@ -1,28 +1,63 @@
 The magic of writing .Net applications on Mac, using the new open-source CLR core.
 
 
-Install
-===
+##Building
+
+Build using ASP .Net 5. See https://github.com/aspnet/home for instructions on how to
+build on your machine.
+
+
+###Downloading packages
+
+Assuming you're got ASP .Net 5 installed, and the command line tools are available (see above), then you can restore nuget packages like this:
+
+```
+kpm restore
+```
+
+### Running
+
+Assuming you're got ASP .Net 5 installed, and the command line tools are available (see above), then you can run the project like this:
+
+```
+k kestrel
+```
+
+The webserver will be running on port 5004 (as of this writing). To exit the server, hit Enter.
+
+There's currently a bug in the hosting, so if you press Ctrl-C to try and terminate the process, it'll just hang. If you do this, you can terminate the process on Mac by doing this:
+- Hit Ctrl-Z
+- Type `kill %1`
+
+
+If you want to see exactly what's going on (including if the port has changed), look in project.json in the commands -> kestrel element.
+
+Note that you can also run `k web` which will launch on port 5001 using a different webserver, but that server doesn't yet work on OSX. So for Mac, use the kestrel server.
+
+
+##Generating the app from scratch
+
+These instructions are for Mac OS X.
 
 Things I already had installed:
-mono
-npm
+- mono
+- npm
+- asp .net 5 (see https://github.com/aspnet/home for how to get setup on your platform)
 
 Install Yeoman:
-  
-    sudo npm install --global yo
+
+```
+sudo npm install --global yo
+```
 
 Install the Yeoman asp generator
-    
-    npm install -g generator-aspnet
+```    
+npm install -g generator-aspnet
+```
 
+Run yo:
+```
+yo
+```
 
-Generate an app
-===
-
-On the command line
-
-    yo
-
-Choose the appropriate template - yo will guide you through
-
+Yeoman will guide you through generating the app
