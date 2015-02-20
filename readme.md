@@ -37,6 +37,8 @@ Note that you can also run `k web` which will launch on port 5001 using a differ
 
 ##Generating the app from scratch
 
+Since the release of beta3, these don't seem to work anymore. Just copy the project.json file and go from there.
+
 These instructions are for Mac OS X.
 
 Things I already had installed:
