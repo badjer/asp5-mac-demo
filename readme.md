@@ -23,9 +23,12 @@ Assuming you're got ASP .Net 5 installed, and the command line tools are availab
 k kestrel
 ```
 
-The webserver will be running on port 5004 (as of this writing). To exit the server, hit Enter.
+The webserver will be running on port 5004 (as of this writing). 
 
-There's currently a bug in the hosting, so if you press Ctrl-C to try and terminate the process, it'll just hang. If you do this, you can terminate the process on Mac by doing this:
+Navigate to /hello/world for a special message - here we're using an the controller in controllers/hellocontroller.cs to serve up the message.
+
+
+To exit the server, hit Enter. There's currently a bug in the hosting, so if you press Ctrl-C to try and terminate the process, it'll just hang. If you do this, you can terminate the process on Mac by doing this:
 - Hit Ctrl-Z
 - Type `kill %1`
 
