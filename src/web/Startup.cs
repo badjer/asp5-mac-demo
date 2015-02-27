@@ -5,7 +5,7 @@ using Microsoft.AspNet.Routing;
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
 
-namespace KWebStartup
+namespace Asp5MacDemo.Web
 {
     public class Startup
     {

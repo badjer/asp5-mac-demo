@@ -9,7 +9,8 @@
     "Kestrel": "1.0.0-*", 
     "Microsoft.AspNet.StaticFiles": "1.0.0-*",
     "Microsoft.AspNet.Mvc": "6.0.0-*",
-    "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-*"
+    "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-*",
+    "Logic":"0.1-alpha-*"
   },
   "commands": {
     "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5001",

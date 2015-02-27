@@ -1,0 +1,12 @@
+{
+  "version": "0.1-alpha-*",
+  "dependencies": {
+    "System.Runtime": "4.0.0-*"
+  },
+  "commands": {
+  },
+  "frameworks": {
+    "aspnet50": {},
+    "aspnetcore50": {}
+  }
+}
