@@ -25,6 +25,10 @@ namespace Asp5MacDemo.Web
         {
             app.UseStaticFiles();
             app.UseMvc(routes => {
+                // This is the default route template - a regular
+                // convention-based router.
+                // NOTE: You can use attribute-based routing alongside
+                // this - see GreetController for an example
                 routes.MapRoute(
                     name: "default",
                     template: "{controller}/{action}/{id?}",
