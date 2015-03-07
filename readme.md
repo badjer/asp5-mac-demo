@@ -17,7 +17,7 @@ kpm restore
 
 ### Running
 
-Assuming you're got ASP .Net 5 installed, and the command line tools are available (see above), then you can run the project like this:
+Assuming you're got ASP .Net 5 installed, and the command line tools are available (see above), then you can run the project like this (from the /src/web/ directory):
 
 ```
 k kestrel
@@ -36,6 +36,13 @@ To exit the server, hit Enter. There's currently a bug in the hosting, so if you
 If you want to see exactly what's going on (including if the port has changed), look in project.json in the commands -> kestrel element.
 
 Note that you can also run `k web` which will launch on port 5001 using a different webserver, but that server doesn't yet work on OSX. So for Mac, use the kestrel server.
+
+##Unit tests
+
+Navigate to test/logic.tests and run
+```
+k test
+```
 
 
 ##Generating the app from scratch
